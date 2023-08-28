@@ -1,10 +1,11 @@
 const inquirer=require('inquirer');
 const fs=require('fs');
+const licensetext=require('./licensetext.js')
 
-const generateReadMe=({title, description,installation, usage, credits, contribute})=>
+const generateReadMe=({title, description,installation, usage, credits, contribute, tests})=>
 
 `# ${title}
-
+![Static Badge](https://img.shields.io/badge/License-MIT-green)
 ## Description
 ${description}
 
@@ -66,6 +67,11 @@ inquirer
     },
     {
         type: 'input',
+        name: 'tests',
+        message: 'Did you use any sources for your project?  If so, please include them here '
+    },
+    {
+        type: 'input',
         name: 'contribute',
         message: 'How can someone contribute to this project?'
     },
@@ -79,10 +85,32 @@ inquirer
 ])
 
 .then((answers) => {
+    let licenseChoice=answers.license;
+    
+    if (licenseChoice==='MIT') {
+        console.log('MIT');
+        license='MIT'
+        
+    }
+    else if (licenseChoice==='Apache 2.0') {
+        console.log('AP2');
+        license="Apache 2.0";
+        
+    }
+    else if (licenseChoice==='GPL 3.0'){
+        console.log('GPL');
+        license='I chose GPL License';
+    }
+
+    else {
+        console.log('BSD3');
+        license="I chose a BSD3 License"
+    }
     const readMeContent = generateReadMe(answers);
     fs.writeFile('reamdme.md', readMeContent, (err) =>
-        err ? console.error(err) : console.log(`Success! Your README has been gnerated for your project, ${title}`)
+        err ? console.error(err) : console.log(`Success! Your README has been gnerated for your project, ${answers.title}`)
     );
+    // console.log(answers);
 
 });
 
