@@ -1,7 +1,7 @@
-# node-js-app
-![Static Badge](https://img.shields.io/badge/License-GPL-green)
+# read-me-generator
+![Static Badge](https://img.shields.io/badge/License-Apache-green)
 ## Description
-This project contains my first node JS app ever created.  The app allows you to answer questions and then it creates a story from  your user input.  
+This project will allow its user to type in information about their project n=and format the responses into a markdown file that will serve as their readme.
 
 ## Table of Contents
 
@@ -13,41 +13,40 @@ This project contains my first node JS app ever created.  The app allows you to 
 6. [Questions](#questions)
 
 ## Installation
-You can clone or fork the node-js-app repository on GitHub.
+Head to my github (link at the bottom of this readme) and clone the read-me-generator repo.
 
 ## Usage
-This app is invoked in the command line and you simply have to answer the questions and it will automatically generate a file with a story based off of your input.
+Invoke the application using node index.js in your terminal and follow the guided prompts.
 
 ## Credits
-I used Coding Geek by Robert Francis as well as my school tutors to help me with this project.
+I used google, coding books, and my school tutor.
 
 ## How to Contribute
-You can contribute by fixing bugs or by adding any functionality that would enhance the project.
+You can contribute by resolving any potential bugs or adding something to enhance the functionality.
 
 ## Tests
 N/A
 
 ## License
-GPL 3.0
-        Copyright (C) 2023 Alyssa Meridian
-        This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+Apache 2.0 
+        Copyright (C) 2023 Amerlia Dray
+        Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+    http://www.apache.org/licenses/LICENSE-2.0
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>. 
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. 
 
 ## Questions
-Alyssa Meridian
+Amerlia Dray
 
-(973) 123-4567
+(973) 999-9999
 
-ameridian@icloud.com
+armelia777@google.com
 
-[Github](https://github.com/amerry777)
+[Github](https://github.com/armelia777)
