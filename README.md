@@ -36,8 +36,6 @@ I used code from class lessons, Rutgers tutors, and class office hours to help f
 ## How to Contribute
 Someone can contribute by adding extra features or finding and resolving any possible bugs.  I would also like to add a function to intake credit links from the user to be formatted and placed in the readme.
 
-## Tests
-N/A
 
 ## License
 MIT
