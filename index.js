@@ -152,7 +152,7 @@ inquirer
     }
     // Creates markdown file with answers formatted as a README using generateReadMe()
     const readMeContent = generateReadMe(answers);
-    fs.writeFile('README', readMeContent, (err) =>
+    fs.writeFile('README.md', readMeContent, (err) =>
         err ? console.error(err) : console.log(`Success! Your README has been gnerated for your project, ${answers.title}`)
     );
     // console.log(answers);
