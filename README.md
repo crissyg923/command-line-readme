@@ -10,10 +10,10 @@
 This project is a readme generator that will help developers to focus more of their time on coding and less of their time on generating a formatted readme.  A readme is a file that should accompany every repository as it explains all of the necessary specifics of your application.  Those necessary specifics include a description, directions for installation, use and contribution, tests that were run, license information, and a section with contact information.  Simply put, the readme serves as your app's documentation and should contain high-quality and accurate information about your development. As I am moving through the Rutgers Full Stack Web, these weekly challenges are becoming a lot easier, but I still learned a lot through completing this challenge.  I was granted the opportunity to work with template literals, making my code much more efficient.  This was my first command line application, so that is also a major skill this challenge has helped me to gain.  Most importantly, I learned mnore tips on how to work with node which will be extremely beneficial on my path to becoming a web developer.
 
 **Screenshot of Terminal**
-![Terminal Screenshot](/command-line-readme/images/terminal.png)
+![Terminal Screenshot](./images/terminal.png)
 
 **Screenshot of Sample Readme**
-![Readme Screenshot](/command-line-readme/images/readmess.png)
+![README Screenshot](./images/readmess.png)
 
 ## Table of Contents
 

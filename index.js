@@ -1,8 +1,11 @@
+// Bring in necessary modules using require()
 const inquirer=require('inquirer');
 const fs=require('fs');
 const licensetext=require('./licensetext.js');
 
-const generateReadMe=({fullname, title, github, badge, description,installation, usage, credits, contribute, tests, phone, email})=>
+// Formats user input into README format
+
+const generateReadMe=({fullname, title, github, description,installation, usage, credits, contribute, tests, phone, email})=>
 
 `# ${title}
 ![Static Badge](https://img.shields.io/badge/License-${license.split(' ')[0]}-green)
@@ -46,6 +49,7 @@ ${email}
 [Github](https://github.com/${github})`
 
 
+// Prompts user for input needed to create README
 inquirer
 .prompt([
     {
@@ -114,7 +118,7 @@ inquirer
     },
 
 ])
-
+// Provides license information depending on user's choice in license prompt
 .then((answers) => {
     let licenseChoice=answers.license;
     
@@ -124,7 +128,6 @@ inquirer
         license=`MIT License
         Copyright (C) 2023 ${answers.fullname}
         ${licensetext.mitLicense}`;
-        var badge=license.split(' ')[0];
         
     }
     else if (licenseChoice==='Apache 2.0') {
@@ -147,8 +150,9 @@ inquirer
         Copyright (C) 2023 ${answers.fullname}
         ${licensetext.apache}`;
     }
-    const readMeContent = generateReadMe(answers, badge);
-    fs.writeFile('sample2.md', readMeContent, (err) =>
+    // Creates markdown file with answers formatted as a README using generateReadMe()
+    const readMeContent = generateReadMe(answers);
+    fs.writeFile('sampler1', readMeContent, (err) =>
         err ? console.error(err) : console.log(`Success! Your README has been gnerated for your project, ${answers.title}`)
     );
     // console.log(answers);
