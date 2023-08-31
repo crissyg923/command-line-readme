@@ -148,7 +148,7 @@ inquirer
         ${licensetext.apache}`;
     }
     const readMeContent = generateReadMe(answers, badge);
-    fs.writeFile('sample.md', readMeContent, (err) =>
+    fs.writeFile('sample2.md', readMeContent, (err) =>
         err ? console.error(err) : console.log(`Success! Your README has been gnerated for your project, ${answers.title}`)
     );
     // console.log(answers);
